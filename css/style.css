@@ -1,0 +1,731 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-irubaqidze/css/bpg-irubaqidze.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-web-001-caps/css/bpg-web-001-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-classic-medium/css/bpg-classic-medium.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-web-001/css/bpg-web-001.min.css");
+
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/***************
+ start header
+****************/
+header {
+    z-index: 5;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 10px;
+    height: 0px;
+}
+
+header a img{
+    width: 250px;
+    margin-left: 10px;
+    position: absolute;
+    transform: translateY(-50px);
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+
+li a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 18px;
+    padding: 15px;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+    opacity: 0.7;
+}
+
+.sidenav {
+    float: left;
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10px);
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    top: 0;
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidenav a:nth-child(2) {
+    clear: both;
+}
+
+.shop {
+    color: white;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+
+.shop a i{
+    color: white;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+/***************
+ end header
+****************/
+
+
+/***************
+ start first face
+****************/
+.sec1 {
+    background-image: url('../image/z2.jpg');
+    background-size: cover;
+    background-position: center;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.sec1::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top:0;
+    background-color:rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+}
+
+.parallax-text {
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%);
+    transform: translate(-50% , -50%);
+    font-family: "BPG Irubaqidze" !important;
+    
+}
+
+.parallax-text h1 {
+    font-size: 45px;
+    max-width: 20em;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 2px 3px 10px #000000;
+    font-family: "BPG Irubaqidze" !important;
+    line-height: 1.5;
+}  
+
+.parallax-text span {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.parallax-text svg {
+    width: 50px;
+    height: 40px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    display: none;
+}
+
+@keyframes example {
+    33%  {top:0px;}
+    66%  {top:15px;}
+    100% {top:0px;}
+}
+
+/***************
+ end first face
+****************/
+/* 
+*
+*
+*
+*/
+/* **************
+ start colection 
+*****************/
+.sec2 {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.sec2 p span {
+    text-decoration: underline;
+}
+
+.prodact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prodact h4 {
+    font-family: "BPG WEB 001", sans-serif;
+    color: white;
+    font-size: 15px;
+    height: 25vh;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.prodact a {
+    font-family: rmn;
+    width: 130px;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.colection1 {
+    background-image: url('../image/JIA/cc1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.colection2 {
+    background-image: url('../image/JIA/z3-res.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.colection3 {
+    background-image: url('../image/y2.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.colection4 {
+    background-image: url('../image/JIA/rr5.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.colection5 {
+    background-image: url('../image/1867528672.png');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 50vh;
+}
+
+.colection6 {
+    background: rgb(119, 221, 141);
+    width: 50%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.colection6 h1 , h4{
+    align-items: center;
+    font-family: "BPG WEB 001", sans-serif;
+}
+
+.colection6 a {
+    align-self: center;
+}
+/* **************
+ end colection 
+*****************/
+/* 
+*
+*
+*
+*/
+/***********************
+ start scroll attachment
+************************/
+.welcome {
+    margin-top: 60px;
+    text-align: center;
+    font-family: "BPG Irubaqidze" !important;
+}
+
+.welcome h2 {
+    text-decoration: underline;
+}
+
+.welcome p {
+    font-size: 25px;
+    max-width: initial;
+    width: 65vw;
+    margin: 30px auto;
+}
+
+.nav {
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.nav-item a:hover {
+    color: black;
+    opacity: 1;
+}
+
+.scroll-arial {
+    outline: none;
+}
+
+/*********************
+ end scroll attachment
+**********************/
+/* 
+*
+*
+*
+*/
+/* ************
+start carousell
+************** */
+.carousel{
+    margin-top: 30px;
+}
+
+.carousel img{
+    width: 100%;
+    height: 80vh;
+    border-radius: 20px;
+}
+
+.s1 {
+    background-image: url(../image/JIA/v2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s2 {
+    background-image: url(../image/JIA/vip/k1.jpg);
+    background-size: cover;
+    background-position: center 55%;
+}
+.s3 {
+    background-image: url(../image/JIA/b3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s4 {
+    background-image: url(../image/JIA/l1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.s5 {
+    background-image: url(../image/JIA/vip/x1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ************
+end carousell
+************** */
+
+.information {
+    margin-top: 50px;
+    width: 100%;
+    height: 65vh;
+    font-family: "BPG Irubaqidze" !important;
+}
+.information div {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 90vw;
+    -ms-transform: translate(-50%);
+    transform: translate(-50% , -50%);
+    font-family: "BPG Irubaqidze" !important;
+}
+
+.information h1 {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+}
+
+.information p {
+   color: black;
+   font-size: 25px;
+}
+
+
+/****************
+ start footer 
+*****************/
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;  /* alternative color #3f3f40 */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fot1 {
+    display: flex;
+    border-bottom: 1px solid gray;
+    height: 35vh;
+}
+
+.fot1 div {
+    width: 100%;
+}
+
+.fot1 div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fot1 div h4 {
+    font-size: 18px;
+    color: white;
+    align-self: center;
+}
+
+.fot1 div p {
+    width: 20vw;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.fot1 div:nth-child(1) a {
+    color: white;
+    opacity: 0.7;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.fot1 div:nth-child(2) {
+    display: flex;
+    align-self: center;
+}
+
+.fot1 div:nth-child(2) h4{
+    margin: 10px;
+}
+
+.fot1 div:nth-child(2) p{
+    margin: 10px;
+}
+
+.fot1 section {
+    background-image: url('../image/nika.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+}
+
+.fot1 div:nth-child(3) {
+    justify-content: center;
+}
+
+.fot1 div:nth-child(3) h4{
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    font-family: "BPG WEB 001 Caps", sans-serif;
+}
+
+.fot1 div:nth-child(3) a {
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+/******************* 
+responsive footer 
+*********************/
+.accordion {
+    position: relative;
+    top: 10%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    display: none;
+}
+
+.accordion-item {
+    width: 300px;
+}
+
+.accordion h2 {
+    font-family: rmn;
+}
+
+.accordion button {
+    color: white;
+}
+
+.accordion-body {
+    color: white;
+    text-align: center;
+}
+
+.accordion-item:nth-child(1) section {
+    background-image: url('../image/nika.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 35%;
+}
+
+.accordion-item:nth-child(1) a {
+    color: white;
+    opacity: 0.7;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.accordion-item:nth-child(3) a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.accordion-item:nth-child(3) h4 {
+    font-size: 14px;
+    color: white;
+    font-family: rmn;
+    padding: 5px;
+}
+
+.responsive {
+    display: flex;
+    justify-content: center;
+}
+
+.responsive a {
+    font-size: 30px;
+    color: white;
+    padding: 20px 20px 5px 20px;
+    opacity: 0.6;
+}
+
+.responsive a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.responsive-icon {
+    height: 100%;
+    padding: 10px;
+}
+
+.responsive-icon h6 {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    opacity: 0.6;
+}
+
+.responsive-icon h6 a {
+    color: white;
+    color: rgb(255, 61, 61);
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-icon {
+        display: block;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    header ul {
+        display: none;
+    }
+    header a img {
+        width: 200px;
+        text-align: center;
+        transform: translateY(0);
+        position: relative;
+    }
+    .shop {
+        display: block;
+    }
+    .prodact {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+    .prodact section {
+        width: 100%;
+    }   
+    .colection6 {
+        height: 10vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .colection6 h1 {
+        font-size: 20px;
+        align-self: center;
+    }
+    .colection6 h3 {
+        display: none;
+    }
+    .colection6 a {
+        margin: auto 0;
+    }
+    .carousel img {
+        height: 60vh;
+    }
+    .s4 {
+        background-image: url('../image/JIA/l5.jpg');
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sec1 {
+        background-image: url('../image/p2.jpg');
+    }
+    .fot1 {
+        display: none;
+    }
+    .accordion {
+        display: flex;
+    }
+    .responsive-icon p {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+    .parallax-text h1 {
+        font-size: 35px;
+        width: 85vw;
+    }
+    .prodact h4 {
+        font-size: 14px;
+        height: 30vh;
+    }
+    .prodact a {
+        width: 100px;
+        font-size: 14px;
+    }
+    .colection6 h1 {
+        font-size: 16px;
+    }
+    .colection6 a {
+        width: 90px;
+    }
+    .sec2 p {
+        max-width: initial;
+        width: 85vw;
+        font-size: 16px;
+    }
+    .parallax-text svg {
+        display: inline-block;
+    }
+    .nav-item a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .information {
+        height: 100vh;
+    }
+    .information p {
+        font-size: 16px;
+    }
+    .responsive-icon h6 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
